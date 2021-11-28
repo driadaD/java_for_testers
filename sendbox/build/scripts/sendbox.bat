@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\sendbox.jar
 
 
 @rem Execute sendbox
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %SENDBOX_OPTS%  -classpath "%CLASSPATH%" MyFirsProgram %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %SENDBOX_OPTS%  -classpath "%CLASSPATH%" MyFirstProgram %*
 
 :end
 @rem End local scope for the variables with windows NT shell
