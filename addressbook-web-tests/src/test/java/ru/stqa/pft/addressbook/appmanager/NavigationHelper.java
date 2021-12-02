@@ -9,6 +9,10 @@ public class NavigationHelper extends HelperBase {
         super(wd);
     }
 
+    public void gotoHome() {
+        click(By.linkText("home"));
+    }
+
     public void gotoGroupPage() {
         click(By.linkText("groups"));
     }
