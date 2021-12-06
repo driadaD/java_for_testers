@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="переимпортнула модули проекта для правильного размещения .idea">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +118,29 @@
       <option name="presentableId" value="Default" />
       <updated>1638766860830</updated>
     </task>
+    <task id="LOCAL-00001" summary="переимпортнула модули проекта для правильного размещения .idea">
+      <created>1638767958974</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638767958974</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="переимпортнула модули проекта для правильного размещения .idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="переимпортнула модули проекта для правильного размещения .idea" />
   </component>
 </project>
