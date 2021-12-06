@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="переимпортнула модули проекта для правильного размещения .idea">
+    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="правки в workspace.xml после переимпорта">
+      <change afterPath="$PROJECT_DIR$/sandbox/src/main/java/ru/stqa/pft/sandbox/Equation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sandbox/src/test/java/ru/stqa/pft/sandbox/EquationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +21,13 @@
     <projectState path="$PROJECT_DIR$/sandbox">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,11 +49,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="TestNG.ContactModificationTest">
+  <component name="RunManager" selected="TestNG.EquationTests">
     <configuration name="ContactModificationTest.testContactModification" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -101,8 +110,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EquationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.EquationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.EquationTests" />
         <item itemvalue="TestNG.ContactModificationTest" />
         <item itemvalue="TestNG.ContactModificationTest.testContactModification" />
         <item itemvalue="Gradle.ContactModificationTest.testContactModification" />
@@ -125,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638767958974</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="правки в workspace.xml после переимпорта">
+      <created>1638768904166</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638768904167</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +175,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="переимпортнула модули проекта для правильного размещения .idea" />
-    <option name="LAST_COMMIT_MESSAGE" value="переимпортнула модули проекта для правильного размещения .idea" />
+    <MESSAGE value="правки в workspace.xml после переимпорта" />
+    <option name="LAST_COMMIT_MESSAGE" value="правки в workspace.xml после переимпорта" />
   </component>
 </project>
