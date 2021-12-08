@@ -36,7 +36,7 @@ public class ContactHelper extends HelperBase {
         type(By.name("mobile"), contactData.getMobilephone());
         type(By.name("email"), contactData.getEmail());
 
-        if (creation){
+        if (creation) {
             new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
@@ -57,5 +57,15 @@ public class ContactHelper extends HelperBase {
 
     public void submitContactModification() {
         click(By.xpath("//div[@id='content']/form/input[22]"));
+    }
+
+    public void createContact(ContactData contact, boolean b) {
+        fillContactForm(contact, true);
+        submitContactCreation();
+        returnToHomePage();
+    }
+
+    public boolean isThereContact() {
+        return isElementPresent(By.name("selected[]"));
     }
 }
