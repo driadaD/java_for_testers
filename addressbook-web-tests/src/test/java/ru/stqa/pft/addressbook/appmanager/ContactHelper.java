@@ -2,7 +2,7 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import ru.stqa.pft.addressbook.model.ContactGroup;
+import ru.stqa.pft.addressbook.model.ContactData;
 
 public class ContactHelper extends HelperBase {
 
@@ -26,10 +26,10 @@ public class ContactHelper extends HelperBase {
         click(By.id("MassCB"));
     }
 
-    public void fillContactForm(ContactGroup contactGroup) {
+    public void fillContactForm(ContactData contactGroup) {
         type(By.name("firstname"), contactGroup.getFirstname());
         type(By.name("lastname"), contactGroup.getLastname());
-        type(By.name("address"), contactGroup.getAdress());
+        type(By.name("address"), contactGroup.getAddress());
         type(By.name("mobile"), contactGroup.getMobilephone());
         type(By.name("email"), contactGroup.getEmail());
     }
