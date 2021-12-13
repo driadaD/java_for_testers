@@ -3,9 +3,12 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.ContactData;
+
+import java.util.List;
 
 public class ContactHelper extends HelperBase {
 
@@ -37,7 +40,11 @@ public class ContactHelper extends HelperBase {
         type(By.name("email"), contactData.getEmail());
 
         if (creation) {
-            new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+            try {
+                new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+            } catch (Exception ex) {
+                System.out.println(ex.getLocalizedMessage());
+            }
         } else {
             Assert.assertFalse(isElementPresent(By.name("new_group")));
         }
