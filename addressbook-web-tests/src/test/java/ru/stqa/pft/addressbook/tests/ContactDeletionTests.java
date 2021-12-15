@@ -10,7 +10,7 @@ public class ContactDeletionTests extends TestBase {
         app.getNavigationHelper().gotoHome();
         if(! app.getContactHelper().isThereContact()){
             app.getNavigationHelper().gotoAddNew();
-            app.getContactHelper().createContact(new ContactData("Angry", "Birds", "preskot srit", "89990009900", "pochta@mail.ru", "test1"), true);
+            app.getContactHelper().createContact(new ContactData("Angry", "Birds", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
         }
         app.getContactHelper().selectContact();
         app.getContactHelper().deleteSelectedContacts();
@@ -23,9 +23,9 @@ public class ContactDeletionTests extends TestBase {
         app.getNavigationHelper().gotoHome();
         if(! app.getContactHelper().isThereContact()){
             app.getNavigationHelper().gotoAddNew();
-            app.getContactHelper().createContact(new ContactData("Angry", "Birds", "preskot srit", "89990009900", "pochta@mail.ru", "test1"), true);
+            app.getContactHelper().createContact(new ContactData("Angry", "Birds", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
             app.getNavigationHelper().gotoAddNew();
-            app.getContactHelper().createContact(new ContactData("Angry2", "Birds2", "preskot srit", "89990009900", "pochta@mail.ru", "test1"), true);
+            app.getContactHelper().createContact(new ContactData("Angry2", "Birds2", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
         }
         app.getContactHelper().selectAllContacts();
         app.getContactHelper().deleteSelectedContacts();
