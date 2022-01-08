@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
 
+import java.util.List;
+
 public class ContactDeletionTests extends TestBase {
 
     @Test
@@ -13,30 +15,33 @@ public class ContactDeletionTests extends TestBase {
             app.getNavigationHelper().gotoAddNew();
             app.getContactHelper().createContact(new ContactData("Angry", "Birds", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
         }
-        int before = app.getContactHelper().getContactCount();
-        app.getContactHelper().selectContact(before - 1);
+        List<ContactData> before = app.getContactHelper().getContactList();
+        app.getContactHelper().selectContact(before.size()-1);
         app.getContactHelper().deleteSelectedContacts();
         app.getContactHelper().submitContactDelete();
         app.getNavigationHelper().gotoHome();
-        int after = app.getContactHelper().getContactCount();
-        Assert.assertEquals(after, before - 1);
+        List<ContactData> after = app.getContactHelper().getContactList();
+        Assert.assertEquals(after.size(), before.size() - 1);
+
+        before.remove(before.size() - 1);
+        Assert.assertEquals(before, after);
     }
 
-    @Test
+    @Test (enabled = false)
     public void testAllContactDeletion() {
         app.getNavigationHelper().gotoHome();
-        int before = app.getContactHelper().getContactCount();
         if (!app.getContactHelper().isThereContact()) {
             app.getNavigationHelper().gotoAddNew();
             app.getContactHelper().createContact(new ContactData("Angry", "Birds", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
             app.getNavigationHelper().gotoAddNew();
             app.getContactHelper().createContact(new ContactData("Angry2", "Birds2", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
         }
+        List<ContactData> before = app.getContactHelper().getContactList();
         app.getContactHelper().selectAllContacts();
         app.getContactHelper().deleteSelectedContacts();
         app.getContactHelper().submitContactDelete();
         app.getNavigationHelper().gotoHome();
-        int after = app.getContactHelper().getContactCount();
-        Assert.assertEquals(after, before - before);
+        List<ContactData> after = app.getContactHelper().getContactList();
+        Assert.assertEquals(after.size(), before.size() - before.size());
     }
 }
