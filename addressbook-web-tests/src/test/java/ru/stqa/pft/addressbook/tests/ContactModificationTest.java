@@ -9,11 +9,11 @@ public class ContactModificationTest extends TestBase {
     @Test
     public void testContactModification() {
         app.getNavigationHelper().gotoHome();
-        int before = app.getContactHelper().getContactCount();
         if (!app.getContactHelper().isThereContact()) {
             app.getNavigationHelper().gotoAddNew();
             app.getContactHelper().createContact(new ContactData("Angry", "Birds", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
         }
+        int before = app.getContactHelper().getContactCount();
         app.getContactHelper().initContactModification(before - 1);
         app.getContactHelper().fillContactForm(new ContactData("Angry2", "Birds2", "preskot srit", "89990009900", "pochta@mail.ru", null), false);
         app.getContactHelper().submitContactModification();
