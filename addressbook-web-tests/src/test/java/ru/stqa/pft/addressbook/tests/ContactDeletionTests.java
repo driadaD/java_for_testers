@@ -10,11 +10,11 @@ public class ContactDeletionTests extends TestBase {
     public void testContactDeletion() {
         app.getNavigationHelper().gotoHome();
         int before = app.getContactHelper().getContactCount();
-        if(! app.getContactHelper().isThereContact()){
+        if (!app.getContactHelper().isThereContact()) {
             app.getNavigationHelper().gotoAddNew();
             app.getContactHelper().createContact(new ContactData("Angry", "Birds", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
         }
-        app.getContactHelper().selectContact();
+        app.getContactHelper().selectContact(before - 1);
         app.getContactHelper().deleteSelectedContacts();
         app.getContactHelper().submitContactDelete();
         app.getNavigationHelper().gotoHome();
@@ -26,7 +26,7 @@ public class ContactDeletionTests extends TestBase {
     public void testAllContactDeletion() {
         app.getNavigationHelper().gotoHome();
         int before = app.getContactHelper().getContactCount();
-        if(! app.getContactHelper().isThereContact()){
+        if (!app.getContactHelper().isThereContact()) {
             app.getNavigationHelper().gotoAddNew();
             app.getContactHelper().createContact(new ContactData("Angry", "Birds", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
             app.getNavigationHelper().gotoAddNew();
@@ -37,6 +37,6 @@ public class ContactDeletionTests extends TestBase {
         app.getContactHelper().submitContactDelete();
         app.getNavigationHelper().gotoHome();
         int after = app.getContactHelper().getContactCount();
-        Assert.assertEquals(after, before-before);
+        Assert.assertEquals(after, before - before);
     }
 }
