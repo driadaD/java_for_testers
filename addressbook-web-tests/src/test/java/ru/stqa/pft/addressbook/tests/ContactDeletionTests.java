@@ -14,7 +14,7 @@ public class ContactDeletionTests extends TestBase {
         app.goTo().home();
         if (app.contact().list().size() == 0) {
             app.goTo().addNew();
-            app.contact().create(new ContactData("Angry", "Birds", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
+            app.contact().create(new ContactData().withFirstname("Angry").withLastname("Birds").withAddress("preskot srit").withMobilephone("89990009900").withEmail("pochta@mail.ru").withGroup("test1"));
         }
     }
 
@@ -36,9 +36,9 @@ public class ContactDeletionTests extends TestBase {
         app.goTo().home();
         if (!app.contact().isThereContact()) {
             app.goTo().addNew();
-            app.contact().create(new ContactData("Angry", "Birds", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
+            app.contact().create(new ContactData().withFirstname("Angry").withLastname("Birds").withAddress("preskot srit").withMobilephone("89990009900").withEmail("pochta@mail.ru").withGroup("test1"));
             app.goTo().addNew();
-            app.contact().create(new ContactData("Angry2", "Birds2", "preskot srit", "89990009900", "pochta@mail.ru", "test1"));
+            app.contact().create(new ContactData().withFirstname("Angry2").withLastname("Birds2").withAddress("preskot srittt").withMobilephone("89990009900").withEmail("pochta@mail.ru").withGroup("test1"));
         }
         List<ContactData> before = app.contact().list();
         app.contact().selectAllContacts();
