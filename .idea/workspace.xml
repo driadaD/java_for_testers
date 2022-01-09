@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="лекция 5.3 рефакторинг названий методов">
+    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="лекция 5.4 fluent интерфейсы">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ContactHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/GroupHelper.java" afterDir="false" />
@@ -84,7 +84,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager" selected="TestNG.ru.stqa.pft.addressbook.tests">
+  <component name="RunManager" selected="TestNG.ContactModificationTest.testContactModification">
     <configuration name="ContactCreationTests.testContactCreation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -96,6 +96,24 @@
       <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
       <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.ContactCreationTests" />
       <option name="METHOD_NAME" value="testContactCreation" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactDeletionTests.testContactDeletion" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.ContactDeletionTests" />
+      <option name="METHOD_NAME" value="testContactDeletion" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,24 +157,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupModificationTests.testGroupModification" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.GroupModificationTests" />
-      <option name="METHOD_NAME" value="testGroupModification" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ru.stqa.pft.addressbook.tests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -175,11 +175,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactModificationTest.testContactModification" />
+        <item itemvalue="TestNG.ContactDeletionTests.testContactDeletion" />
         <item itemvalue="TestNG.ru.stqa.pft.addressbook.tests" />
         <item itemvalue="TestNG.ContactCreationTests.testContactCreation" />
         <item itemvalue="TestNG.GroupCreationTests.testGroupCreation" />
-        <item itemvalue="TestNG.GroupModificationTests.testGroupModification" />
-        <item itemvalue="TestNG.ContactModificationTest.testContactModification" />
       </list>
     </recent_temporary>
   </component>
@@ -353,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641715755332</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="лекция 5.4 fluent интерфейсы">
+      <created>1641718536081</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1641718536081</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,7 +400,8 @@
     <MESSAGE value="лекция 5.1 подправила тест создания контактов + запуск тестов в одном браузере" />
     <MESSAGE value="лекция 5.2 рефакторинг, бифор-метод в тестах, вынос методов модиф-ии и удаления" />
     <MESSAGE value="лекция 5.3 рефакторинг названий методов" />
-    <option name="LAST_COMMIT_MESSAGE" value="лекция 5.3 рефакторинг названий методов" />
+    <MESSAGE value="лекция 5.4 fluent интерфейсы" />
+    <option name="LAST_COMMIT_MESSAGE" value="лекция 5.4 fluent интерфейсы" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

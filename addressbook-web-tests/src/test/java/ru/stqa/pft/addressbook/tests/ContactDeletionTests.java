@@ -4,15 +4,17 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model.GroupData;
 
 import java.util.List;
+import java.util.Set;
 
 public class ContactDeletionTests extends TestBase {
 
     @BeforeMethod
     public void ensurePreconditions() {
         app.goTo().home();
-        if (app.contact().list().size() == 0) {
+        if (app.contact().all().size() == 0) {
             app.goTo().addNew();
             app.contact().create(new ContactData().withFirstname("Angry").withLastname("Birds").withAddress("preskot srit").withMobilephone("89990009900").withEmail("pochta@mail.ru").withGroup("test1"));
         }
@@ -20,32 +22,14 @@ public class ContactDeletionTests extends TestBase {
 
     @Test
     public void testContactDeletion() {
-        List<ContactData> before = app.contact().list();
-        int index = before.size() - 1;
-        app.contact().delete(index);
+        Set<ContactData> before = app.contact().all();
+        ContactData deletedContact = before.iterator().next();
+        app.contact().delete(deletedContact);
         app.goTo().home();
-        List<ContactData> after = app.contact().list();
+        Set<ContactData> after = app.contact().all();
         Assert.assertEquals(after.size(), before.size() - 1);
 
-        before.remove(index);
+        before.remove(deletedContact);
         Assert.assertEquals(before, after);
-    }
-
-    @Test(enabled = false)
-    public void testAllContactDeletion() {
-        app.goTo().home();
-        if (!app.contact().isThereContact()) {
-            app.goTo().addNew();
-            app.contact().create(new ContactData().withFirstname("Angry").withLastname("Birds").withAddress("preskot srit").withMobilephone("89990009900").withEmail("pochta@mail.ru").withGroup("test1"));
-            app.goTo().addNew();
-            app.contact().create(new ContactData().withFirstname("Angry2").withLastname("Birds2").withAddress("preskot srittt").withMobilephone("89990009900").withEmail("pochta@mail.ru").withGroup("test1"));
-        }
-        List<ContactData> before = app.contact().list();
-        app.contact().selectAllContacts();
-        app.contact().deleteSelectedContacts();
-        app.contact().submitContactDelete();
-        app.goTo().home();
-        List<ContactData> after = app.contact().list();
-        Assert.assertEquals(after.size(), before.size() - before.size());
     }
 }
