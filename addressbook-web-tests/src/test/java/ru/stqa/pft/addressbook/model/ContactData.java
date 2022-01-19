@@ -18,74 +18,131 @@ public class ContactData {
     @Column(name = "id")
     @XStreamOmitField
     private int id = Integer.MAX_VALUE;
+
     @Column(name = "firstname")
     @Expose
-    private String firstname;
+    private String firstname = "";
+
+    @Column(name = "middlename")
+    @Expose
+    private String middlename = "";
+
     @Column(name = "lastname")
     @Expose
-    private String lastname;
+    private String lastname = "";
+
+    @Column(name = "nickname")
+    private String nickname = "";
+
+    @Column(name = "company")
+    private String company = "";
+
+    @Column(name = "title")
+    private String title = "";
+
     @Column(name = "address")
     @Type(type = "text")
     @Expose
-    private String address;
+    private String address = "";
+
     @Column(name = "home")
     @Type(type = "text")
-    private String home_phone;
+    private String home_phone = "";
+
     @Column(name = "mobile")
     @Type(type = "text")
     @Expose
-    private String mobile_phone;
+    private String mobile_phone = "";
+
     @Column(name = "work")
     @Type(type = "text")
-    private String work_phone;
-    @Column(name = "phone2")
+    private String work_phone = "";
+
+    @Column(name = "fax")
     @Type(type = "text")
-    private String secondary_home_phone;
+    private String fax_phone = "";
+
     @Column(name = "email")
     @Type(type = "text")
-    private String email;
+    private String email = "";
+
     @Column(name = "email2")
     @Type(type = "text")
-    private String email2;
+    private String email2 = "";
+
     @Column(name = "email3")
     @Type(type = "text")
-    private String email3;
+    private String email3 = "";
+
+    @Column(name = "homepage")
+    @Type(type = "text")
+    private String homePage = "";
+
+    @Column(name = "address2")
+    @Type(type = "text")
+    private String address2 = "";
+
+    @Column(name = "phone2")
+    @Type(type = "text")
+    private String phone2 = "";
+
+    @Column(name = "notes")
+    @Type(type = "text")
+    private String notes = "";
+
     @Column(name = "photo")
     @Type(type = "text")
     private String photo;
 
     @Transient
     private String all_phones;
+
     @Transient
     private String all_email;
+
     @Transient
     private String group;
-
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        ContactData that = (ContactData) o;
-        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(lastname, that.lastname);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, firstname, lastname);
-    }
 
     @Override
     public String toString() {
         return "ContactData{" +
                 "id=" + id +
                 ", firstname='" + firstname + '\'' +
+                ", middlename='" + middlename + '\'' +
                 ", lastname='" + lastname + '\'' +
+                ", address='" + address + '\'' +
+                ", home_phone='" + home_phone + '\'' +
+                ", mobile_phone='" + mobile_phone + '\'' +
+                ", work_phone='" + work_phone + '\'' +
+                ", secondary_home_phone='" + phone2 + '\'' +
+                ", email='" + email + '\'' +
+                ", email2='" + email2 + '\'' +
+                ", email3='" + email3 + '\'' +
+                ", all_phones='" + all_phones + '\'' +
+                ", all_email='" + all_email + '\'' +
+                ", group='" + group + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        ContactData that = (ContactData) o;
+        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(middlename, that.middlename) && Objects.equals(lastname, that.lastname) && Objects.equals(address, that.address) && Objects.equals(home_phone, that.home_phone) && Objects.equals(mobile_phone, that.mobile_phone) && Objects.equals(work_phone, that.work_phone) && Objects.equals(phone2, that.phone2) && Objects.equals(email, that.email) && Objects.equals(email2, that.email2) && Objects.equals(email3, that.email3) && Objects.equals(all_phones, that.all_phones) && Objects.equals(all_email, that.all_email) && Objects.equals(group, that.group);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstname, middlename, lastname, address, home_phone, mobile_phone, work_phone, phone2, email, email2, email3, all_phones, all_email, group);
     }
 
     public String getFirstname() {
         return firstname;
+    }
+
+    public String getMiddlename() {
+        return middlename;
     }
 
     public String getLastname() {
@@ -108,8 +165,8 @@ public class ContactData {
         return work_phone;
     }
 
-    public String getSecondary_home_phone() {
-        return secondary_home_phone;
+    public String getPhone2() {
+        return phone2;
     }
 
     public String getAllPhones() {
@@ -132,8 +189,40 @@ public class ContactData {
         return all_email;
     }
 
+    public String getNickname() {
+        return nickname;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getFaxPhone() {
+        return fax_phone;
+    }
+
+    public String getHomePage() {
+        return homePage;
+    }
+
+    public String getAddress2() {
+        return address2;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
     public File getPhoto() {
-        return new File(photo);
+        if (photo != null) {
+            return new File(photo);
+        } else {
+            return null;
+        }
     }
 
     public String getGroup() {
@@ -151,6 +240,11 @@ public class ContactData {
 
     public ContactData withFirstname(String firstname) {
         this.firstname = firstname;
+        return this;
+    }
+
+    public ContactData withMiddlename(String middlename) {
+        this.middlename = middlename;
         return this;
     }
 
@@ -174,8 +268,8 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withSecondary_home_phone(String secondary_home_phone) {
-        this.secondary_home_phone = secondary_home_phone;
+    public ContactData withPhone2(String phone2) {
+        this.phone2 = phone2;
         return this;
     }
 
@@ -206,6 +300,41 @@ public class ContactData {
 
     public ContactData withAllEmail(String all_email) {
         this.all_email = all_email;
+        return this;
+    }
+
+    public ContactData withNickname(String nickname) {
+        this.nickname = nickname;
+        return this;
+    }
+
+    public ContactData withCompany(String company) {
+        this.company = company;
+        return this;
+    }
+
+    public ContactData withTitle(String title) {
+        this.title = title;
+        return this;
+    }
+
+    public ContactData withFaxPhone(String fax_phone) {
+        this.fax_phone = fax_phone;
+        return this;
+    }
+
+    public ContactData withHomePage(String homePage) {
+        this.homePage = homePage;
+        return this;
+    }
+
+    public ContactData withAddress2(String address2) {
+        this.address2 = address2;
+        return this;
+    }
+
+    public ContactData withNotes(String notes) {
+        this.notes = notes;
         return this;
     }
 

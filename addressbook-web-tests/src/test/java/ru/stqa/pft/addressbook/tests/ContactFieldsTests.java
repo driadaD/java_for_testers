@@ -17,7 +17,7 @@ public class ContactFieldsTests extends TestBase {
         app.goTo().home();
         if (app.contact().all().size() == 0) {
             app.goTo().addNew();
-            app.contact().create(new ContactData().withFirstname("Harry").withLastname("Potter").withAddress("Privet Drive").withHomePhone("555").withMobilePhone("666").withWorkPhone("777").withSecondary_home_phone("1122334455").withEmail("byklay@mail.ru").withEmail2("nimbys_2000@mail.ru").withGroup("test1"));
+            app.contact().create(new ContactData().withFirstname("Harry").withLastname("Potter").withAddress("Privet Drive").withHomePhone("555").withMobilePhone("666").withWorkPhone("777").withPhone2("1122334455").withEmail("byklay@mail.ru").withEmail2("nimbys_2000@mail.ru").withGroup("test1"));
         }
     }
 
@@ -33,7 +33,7 @@ public class ContactFieldsTests extends TestBase {
     }
 
     private String mergePhones(ContactData contact) {
-        return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(), contact.getWorkPhone(), contact.getSecondary_home_phone())
+        return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(), contact.getWorkPhone(), contact.getPhone2())
                 .stream().filter((s) -> ! s.equals(""))
                 .map(ContactFieldsTests::cleanedPhones)
                 .collect(Collectors.joining("\n"));
