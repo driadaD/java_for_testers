@@ -6,6 +6,8 @@ import com.thoughtworks.xstream.XStream;
 import org.testng.annotations.*;
 import ru.stqa.pft.addressbook.model.ContactData;
 import ru.stqa.pft.addressbook.model.Contacts;
+import ru.stqa.pft.addressbook.model.GroupData;
+import ru.stqa.pft.addressbook.model.Groups;
 
 import java.io.*;
 import java.util.Iterator;
@@ -17,6 +19,14 @@ import static org.hamcrest.MatcherAssert.*;
 
 
 public class ContactCreationTests extends TestBase {
+
+    @BeforeMethod
+    public void ensurePreconditions() {
+        if (app.db().groups().size() == 0) {
+            app.goTo().groupPage();
+            app.group().create(new GroupData().withName("test1"));
+        }
+    }
 
     @DataProvider
     public Iterator<Object[]> validContactFromXml() throws IOException {
@@ -59,6 +69,21 @@ public class ContactCreationTests extends TestBase {
         assertThat(app.contact().count(), equalTo(before.size() + 1));
         Contacts after = app.db().contacts();
         assertThat(after, equalTo(before.withAdded(contact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
+        verifyContactListInUI ();
+    }
+
+    @Test
+    public void testSingleContactCreation() throws Exception {
+        Groups groups = app.db().groups();
+        ContactData newContact = new ContactData().withFirstname("Harry").withLastname("Potter").withAddress("Privet Drive")
+                .withHomePhone("555").withMobilePhone("666").withWorkPhone("777").withEmail("byklay@mail.ru").inGroup(groups.iterator().next());
+        app.goTo().home();
+        Contacts before = app.db().contacts();
+        app.goTo().addNew();
+        app.contact().create(newContact);
+        assertThat(app.contact().count(), equalTo(before.size() + 1));
+        Contacts after = app.db().contacts();
+        assertThat(after, equalTo(before.withAdded(newContact.withId(after.stream().mapToInt((c) -> c.getId()).max().getAsInt()))));
         verifyContactListInUI ();
     }
 }

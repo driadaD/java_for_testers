@@ -17,7 +17,7 @@ public class ContactFieldsTests extends TestBase {
         app.goTo().home();
         if (app.contact().all().size() == 0) {
             app.goTo().addNew();
-            app.contact().create(new ContactData().withFirstname("Harry").withLastname("Potter").withAddress("Privet Drive").withHomePhone("555").withMobilePhone("666").withWorkPhone("777").withPhone2("1122334455").withEmail("byklay@mail.ru").withEmail2("nimbys_2000@mail.ru").withGroup("test1"));
+            app.contact().create(new ContactData().withFirstname("Harry").withLastname("Potter").withAddress("Privet Drive").withHomePhone("555").withMobilePhone("666").withWorkPhone("777").withPhone2("1122334455").withEmail("byklay@mail.ru").withEmail2("nimbys_2000@mail.ru"));
         }
     }
 

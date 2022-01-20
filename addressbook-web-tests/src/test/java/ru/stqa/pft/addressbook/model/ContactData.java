@@ -7,7 +7,9 @@ import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.io.File;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "addressbook")
@@ -100,8 +102,9 @@ public class ContactData {
     @Transient
     private String all_email;
 
-    @Transient
-    private String group;
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "address_in_groups", joinColumns = @JoinColumn(name = "id"), inverseJoinColumns = @JoinColumn(name = "group_id"))
+    private Set<GroupData> groups = new HashSet<GroupData>();
 
     @Override
     public String toString() {
@@ -120,7 +123,6 @@ public class ContactData {
                 ", email3='" + email3 + '\'' +
                 ", all_phones='" + all_phones + '\'' +
                 ", all_email='" + all_email + '\'' +
-                ", group='" + group + '\'' +
                 '}';
     }
 
@@ -129,12 +131,16 @@ public class ContactData {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ContactData that = (ContactData) o;
-        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(middlename, that.middlename) && Objects.equals(lastname, that.lastname) && Objects.equals(address, that.address) && Objects.equals(home_phone, that.home_phone) && Objects.equals(mobile_phone, that.mobile_phone) && Objects.equals(work_phone, that.work_phone) && Objects.equals(phone2, that.phone2) && Objects.equals(email, that.email) && Objects.equals(email2, that.email2) && Objects.equals(email3, that.email3) && Objects.equals(all_phones, that.all_phones) && Objects.equals(all_email, that.all_email) && Objects.equals(group, that.group);
+        return id == that.id && Objects.equals(firstname, that.firstname) && Objects.equals(middlename, that.middlename) && Objects.equals(lastname, that.lastname) && Objects.equals(address, that.address) && Objects.equals(home_phone, that.home_phone) && Objects.equals(mobile_phone, that.mobile_phone) && Objects.equals(work_phone, that.work_phone) && Objects.equals(phone2, that.phone2) && Objects.equals(email, that.email) && Objects.equals(email2, that.email2) && Objects.equals(email3, that.email3) && Objects.equals(all_phones, that.all_phones) && Objects.equals(all_email, that.all_email);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstname, middlename, lastname, address, home_phone, mobile_phone, work_phone, phone2, email, email2, email3, all_phones, all_email, group);
+        return Objects.hash(id, firstname, middlename, lastname, address, home_phone, mobile_phone, work_phone, phone2, email, email2, email3, all_phones, all_email);
+    }
+
+    public Groups getGroups() {
+        return new Groups(groups);
     }
 
     public String getFirstname() {
@@ -225,9 +231,6 @@ public class ContactData {
         }
     }
 
-    public String getGroup() {
-        return group;
-    }
 
     public int getId() {
         return id;
@@ -343,8 +346,8 @@ public class ContactData {
         return this;
     }
 
-    public ContactData withGroup(String group) {
-        this.group = group;
+    public ContactData inGroup(GroupData group) {
+        groups.add(group);
         return this;
     }
 }
