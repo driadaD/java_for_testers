@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="задание 16">
-      <change afterPath="$PROJECT_DIR$/mantis-tests/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mantis-tests/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mantis-tests/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/resources/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="добавила новый модуль для тестов для Mantis">
+      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -519,7 +514,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642687852811</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="добавила новый модуль для тестов для Mantis">
+      <created>1642844655529</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1642844655529</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -535,8 +537,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="лекция 4.9 лямбда выражения" />
-    <MESSAGE value="лекция 5.1 подправила тест создания контактов + запуск тестов в одном браузере" />
     <MESSAGE value="лекция 5.2 рефакторинг, бифор-метод в тестах, вынос методов модиф-ии и удаления" />
     <MESSAGE value="лекция 5.3 рефакторинг названий методов" />
     <MESSAGE value="лекция 5.4 fluent интерфейсы" />
@@ -560,7 +560,9 @@
     <MESSAGE value="лекция 7.5 отключаемые проверки UI" />
     <MESSAGE value="лекция 7.6 связи между объектами." />
     <MESSAGE value="задание 16" />
-    <option name="LAST_COMMIT_MESSAGE" value="задание 16" />
+    <MESSAGE value="добавила новый" />
+    <MESSAGE value="добавила новый модуль для тестов для Mantis" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила новый модуль для тестов для Mantis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
