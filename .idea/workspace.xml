@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="лекция 8.3 взаимодействие с сервером (HTTP)">
-      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="лекция 8.4 ленивая инициализация">
+      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/resources/config_inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/resources/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,28 +143,7 @@
       <recent name="ru.stqa.pft.mantis.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTests.testLogin">
-    <configuration name="LoginTests.testTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/mantis-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.pft.mantis.tests.LoginTests.testTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.RegistrationTests.testRegistration">
     <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mantis-tests.test" />
       <extension name="coverage">
@@ -219,6 +197,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegistrationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="mantis-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.RegistrationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegistrationTests.testRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mantis-tests.test" />
       <extension name="coverage">
@@ -238,19 +233,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.LoginTests.testTest" />
       <item itemvalue="TestNG.LoginTests.testTest" />
       <item itemvalue="TestNG.LoginTests.testLogin" />
       <item itemvalue="TestNG.RegistrationTests.testRegistration" />
       <item itemvalue="TestNG.LoginTests" />
+      <item itemvalue="TestNG.RegistrationTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTests.testLogin" />
         <item itemvalue="TestNG.RegistrationTests.testRegistration" />
         <item itemvalue="TestNG.LoginTests" />
+        <item itemvalue="TestNG.RegistrationTests" />
+        <item itemvalue="TestNG.LoginTests.testLogin" />
         <item itemvalue="TestNG.LoginTests.testTest" />
-        <item itemvalue="Gradle.LoginTests.testTest" />
       </list>
     </recent_temporary>
   </component>
@@ -585,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643029595113</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="лекция 8.4 ленивая инициализация">
+      <created>1643039523886</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1643039523886</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -601,7 +603,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="лекция 5.3 рефакторинг названий методов" />
     <MESSAGE value="лекция 5.4 fluent интерфейсы" />
     <MESSAGE value="лекция 5.5 уникальные идентификаторы" />
     <MESSAGE value="лекция 5.6 Hamcrest + задание 10" />
@@ -626,7 +627,8 @@
     <MESSAGE value="добавила новый" />
     <MESSAGE value="добавила новый модуль для тестов для Mantis" />
     <MESSAGE value="лекция 8.3 взаимодействие с сервером (HTTP)" />
-    <option name="LAST_COMMIT_MESSAGE" value="лекция 8.3 взаимодействие с сервером (HTTP)" />
+    <MESSAGE value="лекция 8.4 ленивая инициализация" />
+    <option name="LAST_COMMIT_MESSAGE" value="лекция 8.4 ленивая инициализация" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -637,55 +639,25 @@
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="42" />
+          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java</url>
           <line>8</line>
-          <option name="timeStamp" value="43" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="49" />
+          <url>file://$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
-        <watch expression="post" />
+        <watch expression="post" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
