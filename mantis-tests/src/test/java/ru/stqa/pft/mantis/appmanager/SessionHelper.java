@@ -15,6 +15,6 @@ public class SessionHelper extends HelperBase{
     }
 
     public void logout() {
-        click(By.cssSelector("a[href='/mantisbt-1.2.19/logout_page.php']"));
+        click(By.xpath("/html/body/table[2]/tbody/tr/td[1]/a[9]"));
     }
 }

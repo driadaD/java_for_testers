@@ -1,7 +1,6 @@
 package ru.stqa.pft.mantis.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 
 public class NavigationHelper extends HelperBase{
 
@@ -10,9 +9,9 @@ public class NavigationHelper extends HelperBase{
     }
 
     public void manageUsers() {
-        if(!isElementPresent(By.cssSelector("a[href='/mantisbt-1.2.19/manage_user_page.php']"))){
-            click(By.cssSelector("/mantisbt-1.2.19/manage_overview_page.php"));
+        if(!isElementPresent(By.xpath("/html/body/div[2]/p/span[1]/a"))){
+            click(By.xpath("/html/body/table[2]/tbody/tr/td[1]/a[7]"));
         }
-        click(By.cssSelector("a[href='/mantisbt-1.2.19/manage_user_page.php']"));
+        click(By.xpath("/html/body/div[2]/p/span[1]/a"));
     }
 }
