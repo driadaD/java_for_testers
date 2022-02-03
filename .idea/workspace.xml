@@ -4,11 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="Добавила build для addressbook-web-tests">
-      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" afterDir="false" />
+    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="удаленный запуск браузера">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/classes/java/test/ru/stqa/pft/addressbook/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/classes/java/test/ru/stqa/pft/addressbook/appmanager/ApplicationManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testContacts/classes/ru.stqa.pft.addressbook.tests.ContactCreationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testContacts/classes/ru.stqa.pft.addressbook.tests.ContactDeletionTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testContacts/classes/ru.stqa.pft.addressbook.tests.ContactModificationTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testContacts/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testContacts/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testContacts/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testContacts/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/reports/tests/testContacts/packages/ru.stqa.pft.addressbook.tests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/resources/test/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/resources/test/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/test/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testContacts/TEST-ru.stqa.pft.addressbook.tests.ContactCreationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testContacts/TEST-ru.stqa.pft.addressbook.tests.ContactDeletionTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testContacts/TEST-ru.stqa.pft.addressbook.tests.ContactModificationTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testContacts/binary/output.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testContacts/binary/output.bin.idx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testContacts/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupModificationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/build/test-results/testGroups/TEST-ru.stqa.pft.addressbook.tests.GroupModificationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_1461065131709234068_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_2481440326837104817_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_3270526753785100306_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_3719416563037619184_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_4736116669311713477_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_4738748726364634726_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5181363160858190433_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5200971463036871980_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5215162829931662889_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5627915693353118280_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5646556726696347594_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_5880210493915606595_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_6862609322302452093_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_7085015043873392002_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/build/tmp/testContacts/jar_extract_873256985182542599_tmp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -266,13 +299,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638766860830</updated>
-    </task>
-    <task id="LOCAL-00012" summary="лекция 4.1 циклы">
-      <created>1641624154890</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1641624154890</updated>
     </task>
     <task id="LOCAL-00013" summary="лекция 4.2 массивы и списки">
       <created>1641625435625</created>
@@ -610,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643894217540</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="удаленный запуск браузера">
+      <created>1643895288106</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1643895288106</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -626,7 +659,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="лекция 6.10 + задание 14. Описание конфигурации тестового стенда" />
     <MESSAGE value="лекция 7.1 драйвер mysql + тест для коннекта и получения данных из БД" />
     <MESSAGE value="лекция 7.2 ORM" />
     <MESSAGE value="лекция 7.3 условия отбора данных" />
@@ -651,7 +683,8 @@
     <MESSAGE value="добавила папку build в репозиторий" />
     <MESSAGE value="Добавила .xml отчёт для testGroups" />
     <MESSAGE value="Добавила build для addressbook-web-tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавила build для addressbook-web-tests" />
+    <MESSAGE value="удаленный запуск браузера" />
+    <option name="LAST_COMMIT_MESSAGE" value="удаленный запуск браузера" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
