@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="реализована возможность указывать платформу">
-      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/testng-groups.xml" afterDir="false" />
-    </list>
+    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="добавила файл из репортов" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -263,13 +261,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638766860830</updated>
-    </task>
-    <task id="LOCAL-00014" summary="лекция 4.3 колличество элементов до и после">
-      <created>1641627868607</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1641627868607</updated>
     </task>
     <task id="LOCAL-00015" summary="лекция 4.4 выбор оределенного элемента списка">
       <created>1641628511734</created>
@@ -607,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643897861980</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="добавила файл из репортов">
+      <created>1643898467591</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1643898467591</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -623,7 +621,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="лекция 7.2 ORM" />
     <MESSAGE value="лекция 7.3 условия отбора данных" />
     <MESSAGE value="лекция 7.4 сравнение с БД + задание 15" />
     <MESSAGE value="лекция 7.5 отключаемые проверки UI" />
@@ -648,7 +645,8 @@
     <MESSAGE value="Добавила build для addressbook-web-tests" />
     <MESSAGE value="удаленный запуск браузера" />
     <MESSAGE value="реализована возможность указывать платформу" />
-    <option name="LAST_COMMIT_MESSAGE" value="реализована возможность указывать платформу" />
+    <MESSAGE value="добавила файл из репортов" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила файл из репортов" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
