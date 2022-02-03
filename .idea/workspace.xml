@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="лекции 9.4 и 9.5 + задание 20">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="убрала build из игнора, добавила настройку в build.gradle" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -262,13 +258,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638766860830</updated>
-    </task>
-    <task id="LOCAL-00005" summary="доработка тестов для открытия в разных браузерах">
-      <created>1638791025699</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1638791025699</updated>
     </task>
     <task id="LOCAL-00006" summary="сравнения объектов">
       <created>1638791850944</created>
@@ -606,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643882646127</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="убрала build из игнора, добавила настройку в build.gradle">
+      <created>1643888090514</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1643888090514</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -622,7 +618,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="правки по заданию 11" />
     <MESSAGE value="лекция 6.1 путь  файлам и директориям" />
     <MESSAGE value="лекция 6.2 и 6.3 генератор тестовых данных" />
     <MESSAGE value="лекция 6.4 параметризация тестовых методов" />
@@ -647,7 +642,8 @@
     <MESSAGE value="лекции 9.2 и 9.3 + задание 19" />
     <MESSAGE value="лекции 9.2 и 9.3 + задание 19 еще один коммит" />
     <MESSAGE value="лекции 9.4 и 9.5 + задание 20" />
-    <option name="LAST_COMMIT_MESSAGE" value="лекции 9.4 и 9.5 + задание 20" />
+    <MESSAGE value="убрала build из игнора, добавила настройку в build.gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="убрала build из игнора, добавила настройку в build.gradle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
