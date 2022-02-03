@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="Добавила импорт зависимости testng">
+    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="добавила папку build в репозиторий">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +39,9 @@
           <activation />
         </task>
         <task path="$PROJECT_DIR$/rest-sample">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/sandbox">
           <activation />
         </task>
         <projects_view>
@@ -144,11 +147,11 @@
       <recent name="ru.stqa.pft.mantis.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.GroupCreationTests">
-    <configuration name="sandbox [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.addressbook-web-tests [testGroups]">
+    <configuration name="addressbook-web-tests [testGroups]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -156,7 +159,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value="testGroups" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -165,6 +168,23 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="ContactModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.ContactModificationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="GroupCreationTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
@@ -183,53 +203,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestTests.testCreateIssue" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="rest-sample.test" />
+    <configuration name="GroupModificationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.rest.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.tests.RestTests" />
-      <option name="METHOD_NAME" value="testCreateIssue" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.GroupModificationTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestTests.testIssueStatus" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="rest-sample.test" />
+    <configuration name="GroupModificationTests.testGroupModification" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.rest.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.addressbook.tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.rest.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.rest.tests.RestTests" />
-      <option name="METHOD_NAME" value="testIssueStatus" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SquareTests.testArea" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.sandbox.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.sandbox" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.sandbox.SquareTests" />
-      <option name="METHOD_NAME" value="testArea" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.addressbook.tests.GroupModificationTests" />
+      <option name="METHOD_NAME" value="testGroupModification" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -238,19 +239,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.RestTests.testCreateIssue" />
-      <item itemvalue="TestNG.RestTests.testIssueStatus" />
-      <item itemvalue="TestNG.SquareTests.testArea" />
-      <item itemvalue="Gradle.sandbox [test]" />
       <item itemvalue="TestNG.GroupCreationTests" />
+      <item itemvalue="TestNG.ContactModificationTest" />
+      <item itemvalue="TestNG.GroupModificationTests.testGroupModification" />
+      <item itemvalue="TestNG.GroupModificationTests" />
+      <item itemvalue="Gradle.addressbook-web-tests [testGroups]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.addressbook-web-tests [testGroups]" />
         <item itemvalue="TestNG.GroupCreationTests" />
-        <item itemvalue="TestNG.SquareTests.testArea" />
-        <item itemvalue="Gradle.sandbox [test]" />
-        <item itemvalue="TestNG.RestTests.testCreateIssue" />
-        <item itemvalue="TestNG.RestTests.testIssueStatus" />
+        <item itemvalue="TestNG.GroupModificationTests" />
+        <item itemvalue="TestNG.GroupModificationTests.testGroupModification" />
+        <item itemvalue="TestNG.ContactModificationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -262,20 +263,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638766860830</updated>
-    </task>
-    <task id="LOCAL-00008" summary="небольшие правки. добавила метод проверки наличия/отсутсвия объекта">
-      <created>1638968707452</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1638968707452</updated>
-    </task>
-    <task id="LOCAL-00009" summary="оптимизорованы переходы между страницами">
-      <created>1638969380989</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1638969380989</updated>
     </task>
     <task id="LOCAL-00010" summary="задание 8. проверка и обеспечение предусловий">
       <created>1638972552736</created>
@@ -606,7 +593,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643889652344</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="уменьшила колличество тестов в наборе">
+      <created>1643892429084</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1643892429084</updated>
+    </task>
+    <task id="LOCAL-00058" summary="добавила папку build в репозиторий">
+      <created>1643892605574</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1643892605574</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -622,8 +623,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="лекция 6.4 параметризация тестовых методов" />
-    <MESSAGE value="лекция 6.6 формат XML" />
     <MESSAGE value="лекция 6.8 автоматическое закрытие файлов" />
     <MESSAGE value="лекция 6.9 конфигурационные файлы" />
     <MESSAGE value="лекция 6.10 + задание 14. Описание конфигурации тестового стенда" />
@@ -647,7 +646,9 @@
     <MESSAGE value="убрала build из игнора, добавила настройку в build.gradle" />
     <MESSAGE value="добавила build в проект" />
     <MESSAGE value="Добавила импорт зависимости testng" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавила импорт зависимости testng" />
+    <MESSAGE value="уменьшила колличество тестов в наборе" />
+    <MESSAGE value="добавила папку build в репозиторий" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила папку build в репозиторий" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
