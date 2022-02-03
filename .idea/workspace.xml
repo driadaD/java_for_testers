@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="добавила папку build в репозиторий">
+    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="Добавила build для addressbook-web-tests">
+      <change afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/remote.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/java/ru/stqa/pft/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/addressbook-web-tests/src/test/resources/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +128,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/rest-sample/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/addressbook-web-tests/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -138,9 +141,9 @@
       <recent name="ru.stqa.pft.mantis.appmanager" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\java_for_testers\repa\java_for_testers\addressbook-web-tests\src\test\resources" />
       <recent name="C:\java_for_testers\repa\java_for_testers\rest-sample\src\test\resources" />
       <recent name="C:\java_for_testers\repa\java_for_testers\mantis-tests\src\test\resources" />
-      <recent name="C:\java_for_testers\repa\java_for_testers\addressbook-web-tests\src\test\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ru.stqa.pft.mantis.appmanager" />
@@ -263,20 +266,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638766860830</updated>
-    </task>
-    <task id="LOCAL-00010" summary="задание 8. проверка и обеспечение предусловий">
-      <created>1638972552736</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1638972552736</updated>
-    </task>
-    <task id="LOCAL-00011" summary="задание 8. доработка задания. проверка группы при создании контакта">
-      <created>1639403787771</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1639403787771</updated>
     </task>
     <task id="LOCAL-00012" summary="лекция 4.1 циклы">
       <created>1641624154890</created>
@@ -607,7 +596,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643892605574</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="Добавила .xml отчёт для testGroups">
+      <created>1643894022920</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1643894022920</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Добавила build для addressbook-web-tests">
+      <created>1643894217540</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1643894217540</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -623,8 +626,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="лекция 6.8 автоматическое закрытие файлов" />
-    <MESSAGE value="лекция 6.9 конфигурационные файлы" />
     <MESSAGE value="лекция 6.10 + задание 14. Описание конфигурации тестового стенда" />
     <MESSAGE value="лекция 7.1 драйвер mysql + тест для коннекта и получения данных из БД" />
     <MESSAGE value="лекция 7.2 ORM" />
@@ -648,7 +649,9 @@
     <MESSAGE value="Добавила импорт зависимости testng" />
     <MESSAGE value="уменьшила колличество тестов в наборе" />
     <MESSAGE value="добавила папку build в репозиторий" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавила папку build в репозиторий" />
+    <MESSAGE value="Добавила .xml отчёт для testGroups" />
+    <MESSAGE value="Добавила build для addressbook-web-tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавила build для addressbook-web-tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
