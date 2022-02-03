@@ -4,7 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="убрала build из игнора, добавила настройку в build.gradle" />
+    <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="добавила build в проект">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/classes/java/test/ru/stqa/pft/sandbox/PointTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/classes/java/test/ru/stqa/pft/sandbox/PointTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/classes/java/test/ru/stqa/pft/sandbox/SquareTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/classes/java/test/ru/stqa/pft/sandbox/SquareTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/distributions/sandbox.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/distributions/sandbox.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/libs/sandbox.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/scripts/sandbox" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/scripts/sandbox.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sandbox/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,6 +174,27 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="sandbox [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sandbox" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="RestTests.testCreateIssue" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="rest-sample.test" />
       <extension name="coverage">
@@ -197,24 +231,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SoapTests.testIssueStatus" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.SoapTests" />
-      <option name="METHOD_NAME" value="testIssueStatus" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SquareTests.testArea" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox.test" />
       <extension name="coverage">
@@ -234,19 +250,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.SoapTests.testIssueStatus" />
       <item itemvalue="Gradle.RestTests.testCreateIssue" />
       <item itemvalue="TestNG.RestTests.testCreateIssue" />
       <item itemvalue="TestNG.RestTests.testIssueStatus" />
       <item itemvalue="TestNG.SquareTests.testArea" />
+      <item itemvalue="Gradle.sandbox [test]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.SquareTests.testArea" />
+        <item itemvalue="Gradle.sandbox [test]" />
         <item itemvalue="TestNG.RestTests.testCreateIssue" />
         <item itemvalue="TestNG.RestTests.testIssueStatus" />
         <item itemvalue="Gradle.RestTests.testCreateIssue" />
-        <item itemvalue="TestNG.SoapTests.testIssueStatus" />
       </list>
     </recent_temporary>
   </component>
@@ -258,13 +274,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638766860830</updated>
-    </task>
-    <task id="LOCAL-00006" summary="сравнения объектов">
-      <created>1638791850944</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1638791850944</updated>
     </task>
     <task id="LOCAL-00007" summary="Поправила название модели ContactData. Добавила пример из лекции">
       <created>1638965668994</created>
@@ -602,7 +611,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643888090514</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="добавила build в проект">
+      <created>1643888365181</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1643888365181</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -618,7 +634,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="лекция 6.1 путь  файлам и директориям" />
     <MESSAGE value="лекция 6.2 и 6.3 генератор тестовых данных" />
     <MESSAGE value="лекция 6.4 параметризация тестовых методов" />
     <MESSAGE value="лекция 6.6 формат XML" />
@@ -643,7 +658,8 @@
     <MESSAGE value="лекции 9.2 и 9.3 + задание 19 еще один коммит" />
     <MESSAGE value="лекции 9.4 и 9.5 + задание 20" />
     <MESSAGE value="убрала build из игнора, добавила настройку в build.gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="убрала build из игнора, добавила настройку в build.gradle" />
+    <MESSAGE value="добавила build в проект" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила build в проект" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
