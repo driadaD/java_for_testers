@@ -1,5 +1,6 @@
 package ru.stqa.pft.mantis.appmanager;
 
+import com.sun.mail.imap.AppendUID;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -25,6 +26,7 @@ public class ApplicationManager {
     private SessionHelper sessionHelper;
     private UsersHelper usersHelper;
     private DbHelper dbHelper;
+    private SoapHelper soapHelper;
 
     public ApplicationManager(String browser) {
         this.browser = browser;
@@ -120,6 +122,13 @@ public class ApplicationManager {
             dbHelper = new DbHelper();
         }
         return dbHelper;
+    }
+
+    public SoapHelper soap (){
+     if (soapHelper == null){
+         soapHelper = new SoapHelper(this);
+     }
+     return soapHelper;
     }
 }
 

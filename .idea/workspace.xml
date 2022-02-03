@@ -5,9 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56e6204e-f83f-4368-957b-a9f6fb3c7f1f" name="Changes" comment="задание 18">
+      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/SoapHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/model/Issue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/model/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/SoapTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GeoIPService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GeoIPServiceHttpGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GeoIPServiceHttpPost.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GeoIPServiceSoap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetCountryISO2ByName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetCountryISO2ByNameResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetCountryNameByISO2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetCountryNameByISO2Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetIpLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetIpLocation20.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetIpLocation20Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetIpLocationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetLocation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/GetLocationResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/java/com/lavasoft/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/main/resources/geoipservice.wsdl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/soap-sample/src/test/java/ru/stqa/pft/soap/GeoIpServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/NavigationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/SessionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/SessionHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/java/ru/stqa/pft/mantis/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mantis-tests/src/test/resources/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mantis-tests/src/test/resources/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +51,9 @@
       <ProjectState />
     </projectState>
     <projectState path="$PROJECT_DIR$/sandbox">
+      <ProjectState />
+    </projectState>
+    <projectState path="$PROJECT_DIR$/soap-sample">
       <ProjectState />
     </projectState>
   </component>
@@ -115,7 +147,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mantis-tests/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/soap-sample/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -135,7 +167,7 @@
       <recent name="ru.stqa.pft.mantis.tests" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.ChangePasswordTests">
+  <component name="RunManager" selected="TestNG.SoapTests.testIssueStatus">
     <configuration name="ChangePasswordTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mantis-tests.test" />
       <extension name="coverage">
@@ -153,17 +185,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChangePasswordTests.testChangePassword" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="mantis-tests.test" />
+    <configuration name="GeoIpServiceTests.testMyIp" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="soap-sample.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.stqa.pft.mantis.tests.*" />
+          <option name="PATTERN" value="ru.stqa.pft.soap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.ChangePasswordTests" />
-      <option name="METHOD_NAME" value="testChangePassword" />
+      <option name="PACKAGE_NAME" value="ru.stqa.pft.soap" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.soap.GeoIpServiceTests" />
+      <option name="METHOD_NAME" value="testMyIp" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -171,7 +203,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SoapTests.createIssue" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mantis-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -180,15 +212,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.LoginTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.SoapTests" />
+      <option name="METHOD_NAME" value="createIssue" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SoapTests.testGetProjects" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mantis-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -197,15 +230,16 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.RegistrationTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.SoapTests" />
+      <option name="METHOD_NAME" value="testGetProjects" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTests.testRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SoapTests.testIssueStatus" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="mantis-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -214,8 +248,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stqa.pft.mantis.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.RegistrationTests" />
-      <option name="METHOD_NAME" value="testRegistration" />
+      <option name="MAIN_CLASS_NAME" value="ru.stqa.pft.mantis.tests.SoapTests" />
+      <option name="METHOD_NAME" value="testIssueStatus" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -224,19 +258,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.RegistrationTests.testRegistration" />
-      <item itemvalue="TestNG.LoginTests" />
-      <item itemvalue="TestNG.RegistrationTests" />
-      <item itemvalue="TestNG.ChangePasswordTests.testChangePassword" />
       <item itemvalue="TestNG.ChangePasswordTests" />
+      <item itemvalue="TestNG.GeoIpServiceTests.testMyIp" />
+      <item itemvalue="TestNG.SoapTests.testGetProjects" />
+      <item itemvalue="TestNG.SoapTests.createIssue" />
+      <item itemvalue="TestNG.SoapTests.testIssueStatus" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SoapTests.testIssueStatus" />
+        <item itemvalue="TestNG.SoapTests.createIssue" />
+        <item itemvalue="TestNG.SoapTests.testGetProjects" />
+        <item itemvalue="TestNG.GeoIpServiceTests.testMyIp" />
         <item itemvalue="TestNG.ChangePasswordTests" />
-        <item itemvalue="TestNG.LoginTests" />
-        <item itemvalue="TestNG.RegistrationTests" />
-        <item itemvalue="TestNG.ChangePasswordTests.testChangePassword" />
-        <item itemvalue="TestNG.RegistrationTests.testRegistration" />
       </list>
     </recent_temporary>
   </component>
